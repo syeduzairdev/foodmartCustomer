@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled3/drawer_screens/faq_screen.dart';
 
 class payment_method_screen extends StatefulWidget {
   const payment_method_screen({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class _payment_method_screenState extends State<payment_method_screen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-         leading: IconButton(
+        leading: IconButton(
             onPressed: () => Navigator.of(context).pop(),
             icon: Icon(
               Icons.arrow_back_ios,
@@ -62,30 +63,38 @@ class _payment_method_screenState extends State<payment_method_screen> {
             SizedBox(
               height: 10,
             ),
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      Container(child: Image.asset('assets/paypal 1.png')),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        '********123',
-                        style:
-                            TextStyle(color: Color(0xff868686), fontSize: 15),
-                      ),
-                    ],
-                  ),
-                  new Radio(
-                    activeColor: Colors.red,
-                    value: 0,
-                    groupValue: _radioValue,
-                    onChanged: _handleRadioValueChange,
-                  ),
-                ],
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => faq_screen()));
+              },
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Container(child: Image.asset('assets/paypal 1.png')),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          '********123',
+                          style:
+                              TextStyle(color: Color(0xff868686), fontSize: 15),
+                        ),
+                      ],
+                    ),
+                    new Radio(
+                      activeColor: Colors.red,
+                      value: 0,
+                      groupValue: _radioValue,
+                      onChanged: _handleRadioValueChange,
+                    ),
+                  ],
+                ),
               ),
             ),
             SizedBox(

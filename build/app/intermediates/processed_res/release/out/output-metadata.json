@@ -8,11 +8,40 @@
   "variantName": "processReleaseResources",
   "elements": [
     {
-      "type": "SINGLE",
-      "filters": [],
-      "versionCode": 1,
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86_64"
+        }
+      ],
+      "versionCode": 4001,
       "versionName": "1.0.0",
-      "outputFile": "resources-release.ap_"
+      "outputFile": "resources-x86_64Release.ap_"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "armeabi-v7a"
+        }
+      ],
+      "versionCode": 1001,
+      "versionName": "1.0.0",
+      "outputFile": "resources-armeabi-v7aRelease.ap_"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "arm64-v8a"
+        }
+      ],
+      "versionCode": 2001,
+      "versionName": "1.0.0",
+      "outputFile": "resources-arm64-v8aRelease.ap_"
     }
   ]
 }

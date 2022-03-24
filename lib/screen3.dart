@@ -93,13 +93,17 @@ class _screen3State extends State<screen3> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
-        leading: Icon(
-          Icons.room,
-          color: Color(0xFFC61820),
-        ),
-        title: Text(
-          '17230 NE Sacramento Street',
-          style: TextStyle(color: Colors.grey, fontSize: 16.0),
+        title: Row(
+          children: [
+            Icon(
+              Icons.room,
+              color: Color(0xFFC61820),
+            ),
+            Text(
+              '17230 NE Sacramento Street',
+              style: TextStyle(color: Colors.grey, fontSize: 14.0),
+            ),
+          ],
         ),
         actions: [
           Padding(
@@ -124,9 +128,9 @@ class _screen3State extends State<screen3> {
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Padding(
               padding: const EdgeInsets.only(
-                  left: 30.0, right: 30.0, bottom: 20.0, top: 15.0),
+                  left: 18.0, right: 18.0, bottom: 20.0, top: 15.0),
               child: Container(
-                  height: 50,
+                  height: 40,
                   child: TextField(
                     decoration: new InputDecoration(
                       hintText: 'Search food nearby',
@@ -199,7 +203,7 @@ class _screen3State extends State<screen3> {
               ],
             )),
             Padding(
-              padding: const EdgeInsets.only(left: 12.0),
+              padding: const EdgeInsets.only(left: 20.0),
               child: Text(
                 'Categories',
                 style: TextStyle(
@@ -216,40 +220,45 @@ class _screen3State extends State<screen3> {
                       builder: (BuildContext context) => search_screen()),
                 );
               },
-              child: Container(
-                height: 200,
-                child: GridView.count(
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: false,
-                  crossAxisCount: 4,
-                  children: List<Widget>.generate(8, (index) {
-                    return Align(
-                      alignment: Alignment.topLeft,
-                      child: Container(
-                        margin: EdgeInsets.all(13.0),
-                        child: Padding(
-                          padding: EdgeInsets.only(left: 3.0, top: 3.0),
-                          child: Text(
-                            b[index],
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 8,
-                                fontWeight: FontWeight.bold),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 12.0, right: 12),
+                child: Container(
+                  height: 160,
+                  child: GridView.count(
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: false,
+                    crossAxisCount: 4,
+                    children: List<Widget>.generate(8, (index) {
+                      return Align(
+                        // alignment: Alignment.topLeft,
+                        child: Container(
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 5.0, top: 5.0),
+                            child: Text(
+                              b[index],
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 8,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
+                          height: 65,
+                          width: 65,
+                          decoration: BoxDecoration(
+                              color: Colors.yellow,
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                  image: AssetImage(a[index]),
+                                  fit: BoxFit.fill)),
                         ),
-                        height: MediaQuery.of(context).size.height,
-                        width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
-                            image:
-                                DecorationImage(image: AssetImage(a[index]))),
-                      ),
-                    );
-                  }),
+                      );
+                    }),
+                  ),
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 12.0),
+              padding: const EdgeInsets.only(left: 20.0, top: 15),
               child: Text(
                 'Stories',
                 style: TextStyle(

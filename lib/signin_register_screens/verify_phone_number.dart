@@ -1,11 +1,12 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:untitled3/Dashboard_screens/payment_method_screen.dart';
+import 'package:untitled3/payments_screen/empty_payments_screen.dart';
 import 'package:untitled3/signin_register_screens/sign_in.dart';
 import 'package:untitled3/widgets/button.dart';
 
 import 'forget_password.dart';
-
 
 class otp_screen extends StatelessWidget {
   const otp_screen({Key? key}) : super(key: key);
@@ -22,18 +23,31 @@ class otp_screen extends StatelessWidget {
           ),
           backgroundColor: Colors.white,
           elevation: 0.0,
-
-
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-
-            Center(child: Text( 'Verify phone number', style: TextStyle(color: Colors.black, fontSize: 24),)),
-            Center(child: Text( 'Enter the 4-Digit code sent  ', style: TextStyle(color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),)),
-            Center(child: Text( 'to you at +1501333982 ', style: TextStyle(color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),)),
-            SizedBox(height: 30,),
+            Center(
+                child: Text(
+              'Verify phone number',
+              style: TextStyle(color: Colors.black, fontSize: 24),
+            )),
+            Center(
+                child: Text(
+              'Enter the 4-Digit code sent  ',
+              style: TextStyle(
+                  color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+            )),
+            Center(
+                child: Text(
+              'to you at +1501333982 ',
+              style: TextStyle(
+                  color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+            )),
+            SizedBox(
+              height: 30,
+            ),
             Container(
               padding: EdgeInsets.only(left: 50, right: 50),
               child: PinCodeTextField(
@@ -78,50 +92,49 @@ class otp_screen extends StatelessWidget {
               ),
             ),
             Center(
-              child:
-              CustomButton(
+              child: CustomButton(
                 name: 'Continue',
                 route: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            forgot_password_screen()),
+                            payments_method_screen()),
                   );
                 },
               ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             RichText(
                 text: TextSpan(children: <TextSpan>[
-                  TextSpan(
-                    text: "Didn’t receive code? ",
-
-
-                    style: TextStyle(color: Colors.black, fontSize: 10),
-                  ),
-                  TextSpan(
-                    text: "Resend Again.",
-                    style: TextStyle(
-                        color: Color(0xffC61820),
-                        fontSize: 12
-                    ),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => login_screen()),
-                        );
-                      },
-                  ),
-                ])),
-            SizedBox(height: 10,),
-            Center(child: Text( 'By Signing up you agree to our ', style: TextStyle(color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),)),
-            Center(child: Text( 'Terms Conditions & Privacy Policy.', style: TextStyle(color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),)),
+              TextSpan(
+                text: "Didn’t receive code? ",
+                style: TextStyle(color: Colors.black, fontSize: 10),
+              ),
+              TextSpan(
+                text: "Resend Again.",
+                style: TextStyle(color: Color(0xffC61820), fontSize: 12),
+                recognizer: TapGestureRecognizer()..onTap = () {},
+              ),
+            ])),
+            SizedBox(
+              height: 10,
+            ),
+            Center(
+                child: Text(
+              'By Signing up you agree to our ',
+              style: TextStyle(
+                  color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+            )),
+            Center(
+                child: Text(
+              'Terms Conditions & Privacy Policy.',
+              style: TextStyle(
+                  color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+            )),
           ],
-        )
-    );
+        ));
   }
 }
-

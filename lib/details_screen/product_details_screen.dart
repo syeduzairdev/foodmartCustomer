@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:untitled3/details_screen/moreinfo_screen.dart';
 import 'package:untitled3/details_screen/product_card.dart';
+import 'package:untitled3/details_screen/rating_screen.dart';
+import 'package:untitled3/new_screens/place_order.dart';
 import 'package:untitled3/widgets/app_theme.dart';
 
 class product_details_screen extends StatelessWidget {
@@ -12,10 +14,19 @@ class product_details_screen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            child: Image.asset(
-              'assets/product_cover.png',
-              height: 200,
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => place_order()),
+              );
+            },
+            child: Container(
+              child: Image.asset(
+                'assets/product_cover.png',
+                height: 200,
+              ),
             ),
           ),
           Container(
@@ -88,13 +99,12 @@ class product_details_screen extends StatelessWidget {
                       ],
                     ),
                     GestureDetector(
-                      onTap: (){
-                        Navigator.push (
+                      onTap: () {
+                        Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
                                   more_info_screen()),
-
                         );
                       },
                       child: Text(
@@ -144,7 +154,7 @@ class product_details_screen extends StatelessWidget {
           ),
           Expanded(
             child: DefaultTabController(
-              length: 3,
+              length: 4,
               child: new Scaffold(
                 appBar: new PreferredSize(
                   preferredSize:
@@ -165,10 +175,13 @@ class product_details_screen extends StatelessWidget {
                           text: "Popular",
                         ),
                         Tab(
-                          text: "Popular",
+                          text: "Celebrating deals",
                         ),
                         Tab(
-                          text: "Popular",
+                          text: "Meal box",
+                        ),
+                        Tab(
+                          text: "Family Dinner",
                         ),
                       ],
                     ),
@@ -176,6 +189,7 @@ class product_details_screen extends StatelessWidget {
                 ),
                 body: TabBarView(
                   children: [
+                    product_card(),
                     product_card(),
                     product_card(),
                     product_card(),

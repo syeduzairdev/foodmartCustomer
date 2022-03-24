@@ -1,58 +1,63 @@
-
-
-
-
 import 'package:dotted_decoration/dotted_decoration.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled3/widgets/dialog_widgets_.dart';
 
-class widgets{
-Widget button(BuildContext context,Width,colr,teext,fontize){
-  return Container(
-    decoration: BoxDecoration(color: Color(colr),borderRadius: BorderRadius.circular(10.0)),
-    height: 39,
-    width: Width,
-    //color: Color(colr),
-    child: Center(
-      child: Text(teext,
-      style:TextStyle(fontSize: fontize,color: Colors.white,fontWeight: FontWeight.bold),),
-    ),
-
-  );
-}
-Widget Stories(img,txt){
-  return Padding(
-    padding: const EdgeInsets.all(12.0),
-    child: Column(
-      children: [
-        Container(
-          height: 49,
-          width: 49,
-          decoration: BoxDecoration(
-            image:DecorationImage(
-              image: AssetImage(img),
-            )
-          )
-        ),
-        SizedBox(height: 8.0,),
-        Text(txt,
-            style: TextStyle(fontSize: 12.0,
-            ),),
-
-      ],
-    ),
-  );
-}}
-class grid{
-  Widget grid1(BuildContext context){
+class widgets {
+  Widget button(BuildContext context, Width, colr, teext, fontize) {
     return Container(
+      decoration: BoxDecoration(
+          color: Color(colr), borderRadius: BorderRadius.circular(10.0)),
+      height: 39,
+      width: Width,
+      //color: Color(colr),
+      child: Center(
+        child: Text(
+          teext,
+          style: TextStyle(
+              fontSize: fontize,
+              color: Colors.white,
+              fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
 
+  Widget Stories(img, txt) {
+    return Padding(
+      padding: const EdgeInsets.all(12.0),
+      child: Column(
+        children: [
+          Container(
+              height: 49,
+              width: 49,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                image: AssetImage(img),
+              ))),
+          SizedBox(
+            height: 8.0,
+          ),
+          Text(
+            txt,
+            style: TextStyle(
+              fontSize: 12.0,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class grid {
+  Widget grid1(BuildContext context) {
+    return Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 16.0,top: 20.0,right: 20.0),
+            padding: const EdgeInsets.only(left: 16.0, top: 20.0, right: 20.0),
             child: Container(
               height: 220,
               width: 170,
@@ -60,82 +65,114 @@ class grid{
                 image: DecorationImage(
                   image: AssetImage('assets/bg1.png'),
                 ),
-
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 150.0,left: 16.0),
+                    padding: const EdgeInsets.only(top: 150.0, left: 16.0),
                     child: Row(
                       children: [
                         Container(
                           height: 20.0,
                           width: 20.0,
                           decoration: BoxDecoration(
-                            image: DecorationImage(image: AssetImage('assets/fast-delivery.png'),),),),
-                        Text('25 min',style: TextStyle(color: Colors.white),)
-                      ],),
+                            image: DecorationImage(
+                              image: AssetImage('assets/fast-delivery.png'),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '25 min',
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 5.0,left: 16.0),
+                    padding: const EdgeInsets.only(top: 5.0, left: 16.0),
                     child: Row(
                       children: [
-                        Container(height: 20.0,
+                        Container(
+                          height: 20.0,
                           width: 20.0,
                           decoration: BoxDecoration(
-                            image: DecorationImage(image: AssetImage('assets/delivery.png'),),),),
-                        Text('Free',style: TextStyle(color: Colors.white),),
+                            image: DecorationImage(
+                              image: AssetImage('assets/delivery.png'),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          'Free',
+                          style: TextStyle(color: Colors.white),
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 30.0),
                           child: Container(
                             height: 20,
                             width: 36,
-                            decoration: BoxDecoration(color: Colors.red,borderRadius: BorderRadius.all(Radius.circular(5.0),),),
-                            child: Center(child: Text('4.5',style: TextStyle(fontWeight: FontWeight.bold),)),),
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(5.0),
+                              ),
+                            ),
+                            child: Center(
+                                child: Text(
+                              '4.5',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            )),
+                          ),
                         )
-                      ],),
+                      ],
+                    ),
                   ),
-
                 ],
               ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20.0),
-            child: Text("McDonald's",style: TextStyle(fontSize: 20.0),),
-
+            child: Text(
+              "McDonald's",
+              style: TextStyle(fontSize: 20.0),
+            ),
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Container(
             //width: MediaQuery.of(context).size.width,
             child: Row(
               children: [
-
                 Padding(
                   padding: const EdgeInsets.only(left: 20.0),
-                  child: Text('Chineese ',style: TextStyle(color: Color(0XFF868686),fontSize: 16.0 ),),
+                  child: Text(
+                    'Chineese ',
+                    style: TextStyle(color: Color(0XFF868686), fontSize: 16.0),
+                  ),
                 ),
-
                 Icon(
                   Icons.fiber_manual_record,
                   size: 8,
                   color: Color(0XFF868686),
                 ),
-
-                Text(' American',style: TextStyle(color: Color(0XFF868686),fontSize: 16.0 ),),
+                Text(
+                  ' American',
+                  style: TextStyle(color: Color(0XFF868686), fontSize: 16.0),
+                ),
               ],
             ),
           )
-
         ],
       ),
     );
   }
 }
-class slidable{
-  Widget slidables(){
+
+class slidable {
+  Widget slidables() {
     return Padding(
-      padding: const EdgeInsets.only(left: 8.0,right: 8.0),
+      padding: const EdgeInsets.only(left: 8.0, right: 8.0),
       child: Container(
         height: 102,
         //width: MediaQuery.of(context).size.width * 0.9,
@@ -159,8 +196,8 @@ class slidable{
                   child: ListTile(
                     title: Text(
                       'Pan Cakes',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 18),
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     subtitle: Text('Pista House, Kukatpally'),
                     trailing: Icon(
@@ -215,8 +252,7 @@ class slidable{
                   padding: const EdgeInsets.only(left: 20.0),
                   child: Text(
                     '\$ 15.20',
-                    style:
-                    TextStyle(color: Colors.black, fontSize: 18.0),
+                    style: TextStyle(color: Colors.black, fontSize: 18.0),
                   ),
                 ),
               ],
@@ -227,8 +263,9 @@ class slidable{
     );
   }
 }
-class sc7{
-  Widget text(BuildContext context,text1,text2,colr){
+
+class sc7 {
+  Widget text(BuildContext context, text1, text2, colr) {
     return Container(
       // width: MediaQuery.of(context).size.width,
       // height: MediaQuery.of(context).size.height,
@@ -236,16 +273,23 @@ class sc7{
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-
-          SizedBox(height: 10.0,),
+          SizedBox(
+            height: 10.0,
+          ),
           Padding(
-            padding: const EdgeInsets.only(left: 20.0,right: 20.0),
+            padding: const EdgeInsets.only(left: 20.0, right: 20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(text1,style: TextStyle(fontSize: 15.0,color: Color(colr)),),
-                Text(text2,style: TextStyle(fontSize: 15.0),),
+                Text(
+                  text1,
+                  style: TextStyle(fontSize: 15.0, color: Color(colr)),
+                ),
+                Text(
+                  text2,
+                  style: TextStyle(fontSize: 15.0),
+                ),
               ],
             ),
           ),
@@ -262,44 +306,56 @@ class sc7{
   }
 }
 
-class coupon{
-  Widget coupon1(BuildContext context,ontap){
+class coupon {
+  Widget coupon1(BuildContext context, ontap) {
     return Column(
-
       children: [
         Center(
           child: Container(
               height: 147,
-              width: MediaQuery.of(context).size.width*0.8,
-
-              decoration: DottedDecoration(borderRadius: BorderRadius.circular(20.0),
+              width: MediaQuery.of(context).size.width * 0.8,
+              decoration: DottedDecoration(
+                borderRadius: BorderRadius.circular(20.0),
                 color: Color(0XFFBC1C23),
                 shape: Shape.box,
                 strokeWidth: 3.0,
               ),
               child: Column(
                 children: [
-                  SizedBox(height: 15.0,),
+                  SizedBox(
+                    height: 15.0,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-
                       Container(
                         height: 46.0,
                         width: 46.0,
-                        decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/coupon.png'))),
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/coupon.png'))),
                       ),
-                      Text('Gift Coupon valued at \$50 or 10% \noff at  Asia To Me',style: TextStyle(fontSize: 13.0,fontWeight: FontWeight.w500),)
+                      Text(
+                        'Gift Coupon valued at \$50 or 10% \noff at  Asia To Me',
+                        style: TextStyle(
+                            fontSize: 13.0, fontWeight: FontWeight.w500),
+                      )
                     ],
                   ),
-                  SizedBox(height: 12.0,),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20.0,right: 20.0),
-                    child: Divider(thickness: 2.0,),
+                  SizedBox(
+                    height: 12.0,
                   ),
-                  SizedBox(height: 5.0,),
                   Padding(
-                    padding: const EdgeInsets.only(left: 20.0,right: 20.0),
+                    padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+                    child: Divider(
+                      thickness: 2.0,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 5.0,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -307,8 +363,16 @@ class coupon{
                           crossAxisAlignment: CrossAxisAlignment.start,
                           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text('Expires',style: TextStyle(fontSize: 13.0,color: Color(0xffA49A9A)),),
-                            Text('04 jan 2022',style: TextStyle(fontSize: 13.0,color: Colors.black),),
+                            Text(
+                              'Expires',
+                              style: TextStyle(
+                                  fontSize: 13.0, color: Color(0xffA49A9A)),
+                            ),
+                            Text(
+                              '04 jan 2022',
+                              style: TextStyle(
+                                  fontSize: 13.0, color: Colors.black),
+                            ),
                           ],
                         ),
                         InkWell(
@@ -316,50 +380,224 @@ class coupon{
                           child: Container(
                             height: 32,
                             width: 97,
-                            decoration: BoxDecoration(color: Color(0xffA44145),borderRadius: BorderRadius.circular(40.0)),
-                            child: Center(child: Text('I Agree',style: TextStyle(fontSize: 12.0,fontWeight: FontWeight.w500,color: Colors.white),),),),
+                            decoration: BoxDecoration(
+                                color: Color(0xffA44145),
+                                borderRadius: BorderRadius.circular(40.0)),
+                            child: Center(
+                              child: Text(
+                                'I Agree',
+                                style: TextStyle(
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white),
+                              ),
+                            ),
+                          ),
                         ),
                       ],
                     ),
                   ),
                 ],
-              )
-          ),
+              )),
         )
       ],
     );
   }
-  Widget drawerwidget(icon,name,BuildContext context,ontap) {
-    return Container(
 
+  Widget drawerwidget(icon, name, BuildContext context, ontap) {
+    return Container(
       width: MediaQuery.of(context).size.width,
       height: 50,
       decoration: new BoxDecoration(
         color: Colors.white,
-
       ),
-      child:
-      InkWell(
-          onTap:  ontap,
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Icon(
-                  icon,
-                  color: Colors.black
-              ),
-              SizedBox(width: 5,),
-              Text(
-               name,
-                style: TextStyle(
-                    fontFamily: 'Roboto',
-                    color: Colors.black
+      child: InkWell(
+          onTap: ontap,
+          child: Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(icon, color: Colors.black),
+                SizedBox(
+                  width: 5,
                 ),
-              ),
-            ],
+                Text(
+                  name,
+                  style: TextStyle(fontFamily: 'Roboto', color: Colors.black),
+                ),
+              ],
+            ),
           )),
     );
   }
 }
 
+class card {
+  Widget Card(txta, ast, txtb) {
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 40,
+                width: 40,
+                decoration: BoxDecoration(
+                    image: DecorationImage(image: AssetImage(ast))),
+              ),
+              SizedBox(
+                width: 15,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    txta,
+                    style: TextStyle(
+                        fontFamily: 'Roboto',
+                        color: Colors.black,
+                        fontSize: 16),
+                  ),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    txtb,
+                    style: TextStyle(
+                        fontFamily: 'Roboto',
+                        color: Color(0xff727171),
+                        fontSize: 14),
+                  ),
+                ],
+              )
+            ],
+          ),
+          Icon(
+            Icons.arrow_forward_ios_outlined,
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class Coins {
+  Widget Coin(BuildContext context, clr) {
+    return Container(
+      height: 235,
+      width: MediaQuery.of(context).size.width * 0.42,
+      decoration:
+          BoxDecoration(color: clr, borderRadius: BorderRadius.circular(15)),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Container(
+            height: 46,
+            width: 100,
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
+                )),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Text(
+                    "WIN UP TO",
+                    style: TextStyle(color: Color(0xff000000), fontSize: 12),
+                  ),
+                  Text(
+                    "Rs: 100",
+                    style: TextStyle(color: Color(0xffBC1C23), fontSize: 14),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Image.asset("assets/coina.png"),
+          Container(
+            height: 46,
+            width: 100,
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(20),
+                )),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Container(
+                    height: 20,
+                    width: 20,
+                    decoration: BoxDecoration(
+                        color: Color(0xffBC1C23), shape: BoxShape.circle),
+                    child: Icon(
+                      Icons.star_outlined,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    "450",
+                    style: TextStyle(color: Color(0xffBC1C23), fontSize: 14),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Search {
+  Widget search(wdt, clr, txt, clr2) {
+    return Container(
+      width: wdt,
+      height: 50,
+      decoration:
+          BoxDecoration(color: clr, borderRadius: BorderRadius.circular(20)),
+      child: Center(
+        child: Text(
+          txt,
+          style: TextStyle(fontSize: 12, color: clr2),
+        ),
+      ),
+    );
+  }
+}
+
+class msg {
+  Widget Msg(BuildContext context, clr, clr2) {
+    return Container(
+      height: 50,
+      width: MediaQuery.of(context).size.width * 0.6,
+      decoration: BoxDecoration(
+          color: clr,
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(20),
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20),
+          )),
+      child: Center(
+          child: Text(
+        "This is the message recieved.",
+        style: TextStyle(
+          color: clr2,
+          fontSize: 12,
+        ),
+      )),
+    );
+  }
+}

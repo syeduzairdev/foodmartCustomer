@@ -1,37 +1,37 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.example.untitled3"
-4    android:versionCode="1"
+4    android:versionCode="4001"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="30" />
-9-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml
+8-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:3:4-40:19
+11-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:3:4-40:19
 12        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-12-->[androidx.core:core:1.1.0] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:18-86
+12-->[androidx.core:core:1.6.0] C:\Users\uzair\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
 13        android:icon="@mipmap/ic_launcher"
-13-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:5:9-43
+13-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:5:9-43
 14        android:label="untitled3" >
-14-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:4:9-34
+14-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:4:9-34
 15        <activity
-15-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:6:9-34:20
+15-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:6:9-34:20
 16            android:name="com.example.untitled3.MainActivity"
-16-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:7:13-41
+16-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:7:13-41
 17            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-17-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:10:13-163
+17-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:10:13-163
 18            android:hardwareAccelerated="true"
-18-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:11:13-47
+18-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:11:13-47
 19            android:launchMode="singleTop"
-19-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:8:13-43
+19-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:8:13-43
 20            android:theme="@style/LaunchTheme"
-20-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:9:13-47
+20-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:9:13-47
 21            android:windowSoftInputMode="adjustResize" >
-21-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:12:13-55
+21-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:12:13-55
 22
 23            <!--
 24                 Specifies an Android theme to apply to this Activity as soon as
@@ -40,11 +40,11 @@
 27                 to determine the Window background behind the Flutter UI.
 28            -->
 29            <meta-data
-29-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:17:13-20:17
+29-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:17:13-20:17
 30                android:name="io.flutter.embedding.android.NormalTheme"
-30-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:18:15-70
+30-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:18:15-70
 31                android:resource="@style/NormalTheme" />
-31-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:19:15-52
+31-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:19:15-52
 32            <!--
 33                 Displays an Android View that continues showing the launch screen
 34                 Drawable until Flutter paints its first frame, then this splash
@@ -53,21 +53,21 @@
 37                 Flutter's first frame.
 38            -->
 39            <meta-data
-39-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:26:13-29:17
+39-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:26:13-29:17
 40                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-40-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:27:15-79
+40-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:27:15-79
 41                android:resource="@drawable/launch_background" />
-41-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:28:15-61
+41-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:28:15-61
 42
 43            <intent-filter>
-43-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:30:13-33:29
+43-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:30:13-33:29
 44                <action android:name="android.intent.action.MAIN" />
-44-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:31:17-68
-44-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:31:25-66
+44-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:31:17-68
+44-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:31:25-66
 45
 46                <category android:name="android.intent.category.LAUNCHER" />
-46-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:32:17-76
-46-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:32:27-74
+46-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:32:17-76
+46-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:32:27-74
 47            </intent-filter>
 48        </activity>
 49        <!--
@@ -75,11 +75,24 @@
 51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 52        -->
 53        <meta-data
-53-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:37:9-39:33
+53-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:37:9-39:33
 54            android:name="flutterEmbedding"
-54-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:38:13-44
+54-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:38:13-44
 55            android:value="2" />
-55-->C:\Users\M.A COM\AndroidStudioProjects\asiatome_resturentapp\android\app\src\main\AndroidManifest.xml:39:13-30
-56    </application>
-57
-58</manifest>
+55-->D:\divsnPixel\asia_to_me_customer_resturent\android\app\src\main\AndroidManifest.xml:39:13-30
+56
+57        <uses-library
+57-->[androidx.window:window:1.0.0-beta04] C:\Users\uzair\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+58            android:name="androidx.window.extensions"
+58-->[androidx.window:window:1.0.0-beta04] C:\Users\uzair\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+59            android:required="false" />
+59-->[androidx.window:window:1.0.0-beta04] C:\Users\uzair\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+60        <uses-library
+60-->[androidx.window:window:1.0.0-beta04] C:\Users\uzair\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+61            android:name="androidx.window.sidecar"
+61-->[androidx.window:window:1.0.0-beta04] C:\Users\uzair\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0-beta04] C:\Users\uzair\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+63    </application>
+64
+65</manifest>

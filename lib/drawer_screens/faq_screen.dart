@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled3/Dashboard_screens/terms_condition.dart';
+import 'package:untitled3/new_screens/john_doe.dart';
 
 class faq_screen extends StatelessWidget {
   const faq_screen({Key? key}) : super(key: key);
@@ -174,7 +175,6 @@ class faq_screen extends StatelessWidget {
                 color: Colors.red,
                 child: Text(
                   'Submit your Question',
-
                   style: TextStyle(
                     fontFamily: 'Roboto',
                     color: Colors.white,
@@ -183,15 +183,11 @@ class faq_screen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => terms_condition()),
-                    );
-                  },
-
-
-
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => john_doe()),
+                  );
+                },
               ),
             ),
           ],

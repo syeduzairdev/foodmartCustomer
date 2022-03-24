@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\M.A COM\\AndroidStudioProjects\\asiatome_resturentapp\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\M.A COM\\AndroidStudioProjects\\asiatome_resturentapp\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\divsnPixel\\asia_to_me_customer_resturent\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

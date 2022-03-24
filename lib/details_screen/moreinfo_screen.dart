@@ -130,7 +130,6 @@ class more_info_screen extends StatelessWidget {
           ),
           Expanded(
             child: DefaultTabController(
-
               length: 2,
               child: new Scaffold(
                 appBar: new PreferredSize(
@@ -151,13 +150,13 @@ class more_info_screen extends StatelessWidget {
                         Tab(
                           child: Align(
                             alignment: Alignment.center,
-                            child: Text("MOVIES"),
+                            child: Text("ABOUT"),
                           ),
                         ),
                         Tab(
                           child: Align(
                             alignment: Alignment.center,
-                            child: Text("MOVIES"),
+                            child: Text("RATINGS"),
                           ),
                         ),
                       ],
@@ -165,7 +164,6 @@ class more_info_screen extends StatelessWidget {
                   ),
                 ),
                 body: TabBarView(
-
                   children: [
                     Image.asset('assets/MAp.png'),
                     ratings_screen(),

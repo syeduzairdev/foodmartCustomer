@@ -53,27 +53,28 @@ class drawer extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => screen4()),
+                        MaterialPageRoute(builder: (context) => screen4()),
                       );
                     },
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Icon(Icons.home, color: Colors.black),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          'Favourite Restaurant',
-                          style: TextStyle(
-                              fontFamily: 'Roboto', color: Colors.black),
-                        ),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Icon(Icons.home, color: Colors.black),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'Favourite Restaurant',
+                            style: TextStyle(
+                                fontFamily: 'Roboto', color: Colors.black),
+                          ),
+                        ],
+                      ),
                     )),
               ),
-
               GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -118,25 +119,28 @@ class drawer extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => faq_screen()),
                       );
                     },
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            Icon(Icons.help, color: Colors.black),
-                            SizedBox(
-                              width: 5,
-                            ),
-                            Text(
-                              'Help',
-                              style: TextStyle(
-                                  fontFamily: 'Roboto', color: Colors.black),
-                            ),
-                          ],
-                        ),
-                        Icon(Icons.arrow_drop_down),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.help, color: Colors.black),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                'Help',
+                                style: TextStyle(
+                                    fontFamily: 'Roboto', color: Colors.black),
+                              ),
+                            ],
+                          ),
+                          Icon(Icons.arrow_drop_down),
+                        ],
+                      ),
                     )),
               ),
               coupon().drawerwidget(Icons.logout, 'logout', context, null),

@@ -3,6 +3,6 @@
 3    package="io.flutter.plugins.pathprovider" >
 4
 5    <uses-sdk android:minSdkVersion="16" />
-5-->C:\src\flutter\flutter\.pub-cache\hosted\pub.dartlang.org\path_provider-2.0.4\android\src\main\AndroidManifest.xml
+5-->C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\path_provider-2.0.4\android\src\main\AndroidManifest.xml
 6
 7</manifest>

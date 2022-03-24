@@ -1,4 +1,4 @@
-#Tue Mar 15 13:58:36 PKT 2022
-base.0=C\:\\Users\\M.A COM\\AndroidStudioProjects\\asiatome_resturentapp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Thu Mar 24 22:29:22 PKT 2022
+base.0=D\:\\divsnPixel\\asia_to_me_customer_resturent\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

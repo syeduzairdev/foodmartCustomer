@@ -31,8 +31,6 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-
     return Container(
       height: 40,
       width: 220,
@@ -80,6 +78,26 @@ class onboardingbutton extends StatelessWidget {
           ),
         ),
         onPressed: route,
+      ),
+    );
+  }
+}
+
+class button {
+  Widget Button(txt) {
+    return Container(
+      width: double.infinity,
+      height: 55,
+      decoration: BoxDecoration(
+          color: Color(0xffBC1C23), borderRadius: BorderRadius.circular(15)),
+      child: Center(
+        child: Text(
+          txt,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+          ),
+        ),
       ),
     );
   }
