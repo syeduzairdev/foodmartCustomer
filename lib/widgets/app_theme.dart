@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
 
 class apptheme {
-  final color = Color(0xffBC1C23);
+  final color = Color(0xffF37720);
 }

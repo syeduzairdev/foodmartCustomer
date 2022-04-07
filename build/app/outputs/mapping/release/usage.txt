@@ -8164,8 +8164,8 @@ androidx.core.app.ActivityCompat$RequestPermissionsRequestCodeValidator
 com.google.common.collect.ForwardingCollection
 com.google.common.util.concurrent.CycleDetectingLockFactory$CycleDetectingReentrantLock
 com.google.common.base.Functions$FunctionForMapNoDefault
-kotlinx.coroutines.Delay
 kotlinx.coroutines.test.TestCoroutineContext
+kotlinx.coroutines.Delay
 com.google.common.eventbus.package-info
 com.google.common.collect.MapMakerInternalMap$StrongKeyWeakValueEntry$Helper
 com.google.common.cache.LocalCache$AccessQueue$2

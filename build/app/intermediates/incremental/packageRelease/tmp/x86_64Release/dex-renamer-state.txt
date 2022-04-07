@@ -1,4 +1,4 @@
-#Thu Mar 24 22:33:39 PKT 2022
-base.0=D\:\\divsnPixel\\asia_to_me_customer_resturent\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+#Thu Mar 31 23:44:36 PKT 2022
+base.0=D\:\\divsnPixel\\foodmart_customer\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

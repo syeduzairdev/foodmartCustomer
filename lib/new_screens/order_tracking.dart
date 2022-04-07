@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:untitled3/screen9.dart';
+import 'package:untitled3/mart/notification.dart';
+import 'package:untitled3/mart/zinger.dart';
+import 'package:untitled3/new_screens/delivery_time.dart';
 
 class order_tracking extends StatefulWidget {
   const order_tracking({Key? key}) : super(key: key);
@@ -45,12 +47,7 @@ class _order_trackingState extends State<order_tracking> {
                 ),
               ),
               InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => screen9()));
-                },
+                onTap: () {},
                 child: Container(
                   height: 230,
                   width: MediaQuery.of(context).size.width,
@@ -74,6 +71,13 @@ class _order_trackingState extends State<order_tracking> {
                             fontSize: 22,
                           ),
                         ),
+                        Text(
+                          "Delivery Man",
+                          style: TextStyle(
+                            color: Color(0xff9D9D9D),
+                            fontSize: 12,
+                          ),
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -95,7 +99,7 @@ class _order_trackingState extends State<order_tracking> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "John Doe",
+                                      "Cameron Williamson",
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 16,
@@ -114,7 +118,7 @@ class _order_trackingState extends State<order_tracking> {
                             ),
                             Icon(
                               Icons.call,
-                              color: Color(0xffBC1C23),
+                              color: Color(0xffF37720),
                             )
                           ],
                         ),
@@ -130,7 +134,7 @@ class _order_trackingState extends State<order_tracking> {
                               ),
                               child: Icon(
                                 Icons.location_pin,
-                                color: Color(0xffBC1C23),
+                                color: Color(0xffF37720),
                               ),
                             ),
                             SizedBox(
@@ -174,7 +178,7 @@ class _order_trackingState extends State<order_tracking> {
                               ),
                               child: Icon(
                                 Icons.location_pin,
-                                color: Color(0xffBC1C23),
+                                color: Color(0xffF37720),
                               ),
                             ),
                             SizedBox(

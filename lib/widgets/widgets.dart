@@ -407,8 +407,9 @@ class coupon {
   Widget drawerwidget(icon, name, BuildContext context, ontap) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 50,
+      height: 60,
       decoration: new BoxDecoration(
+        border: Border.fromBorderSide(BorderSide(color: Color(0xffC9C9C9))),
         color: Colors.white,
       ),
       child: InkWell(
@@ -513,7 +514,7 @@ class Coins {
                   ),
                   Text(
                     "Rs: 100",
-                    style: TextStyle(color: Color(0xffBC1C23), fontSize: 14),
+                    style: TextStyle(color: Color(0xffF37720), fontSize: 14),
                   ),
                 ],
               ),
@@ -537,7 +538,7 @@ class Coins {
                     height: 20,
                     width: 20,
                     decoration: BoxDecoration(
-                        color: Color(0xffBC1C23), shape: BoxShape.circle),
+                        color: Color(0xffF37720), shape: BoxShape.circle),
                     child: Icon(
                       Icons.star_outlined,
                       color: Colors.white,
@@ -549,7 +550,7 @@ class Coins {
                   ),
                   Text(
                     "450",
-                    style: TextStyle(color: Color(0xffBC1C23), fontSize: 14),
+                    style: TextStyle(color: Color(0xffF37720), fontSize: 14),
                   ),
                 ],
               ),
@@ -598,6 +599,235 @@ class msg {
           fontSize: 12,
         ),
       )),
+    );
+  }
+}
+
+class invites {
+  Widget invite(txt1, txt2, txt3) {
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            txt1,
+            style: TextStyle(
+                fontSize: 16, color: Colors.black, fontWeight: FontWeight.w600),
+          ),
+          Row(
+            children: [
+              Text(
+                txt2,
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Container(
+                height: 35,
+                width: 110,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  color: Color(0xffF37720),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 25,
+                        width: 25,
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.white,
+                            ),
+                            color: Color(0xffF37720),
+                            shape: BoxShape.circle),
+                        child: Icon(
+                          Icons.attach_money_outlined,
+                          size: 12,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        txt3,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class searchh {
+  Widget Searchh(icn, txt1, txt2) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 8.0),
+      child: Container(
+        child: Row(
+          children: [
+            Icon(
+              Icons.near_me_outlined,
+              color: Color(0xff868686),
+              size: 20,
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  txt1,
+                  style: TextStyle(fontSize: 16),
+                ),
+                Text(
+                  txt2,
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: Color(0xff868686),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class noti {
+  Widget Noti(
+    clr,
+    clr2,
+    txt1,
+    txt2,
+    ast,
+  ) {
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 5.0),
+                child: Container(
+                  height: 15,
+                  width: 15,
+                  decoration: BoxDecoration(color: clr, shape: BoxShape.circle),
+                ),
+              ),
+              SizedBox(
+                width: 15,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    txt1,
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: clr2,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 3,
+                  ),
+                  Text(
+                    txt2,
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Color(0xff68717A),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          Container(
+            height: 60,
+            width: 60,
+            decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage(ast)),
+                shape: BoxShape.circle),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Carrt {
+  Widget carrt(txt1) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              height: 25,
+              width: 25,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Color(0xffA1A1A1),
+                ),
+              ),
+              child: Center(
+                  child: Text(
+                txt1,
+                style: TextStyle(color: Color(0xffFA701B)),
+              )),
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Cookie Sandwich",
+                  style: TextStyle(color: Color(0xff000000), fontSize: 18),
+                ),
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  "Shortbread, chocolate turtle\ncookies, and red velvet.",
+                  style: TextStyle(color: Color(0xffA1A1A1), fontSize: 16),
+                )
+              ],
+            )
+          ],
+        ),
+        Text(
+          "USD7.4",
+          style: TextStyle(color: Color(0xffFA701B), fontSize: 14),
+        ),
+      ],
     );
   }
 }

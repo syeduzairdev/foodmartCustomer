@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\divsnPixel\\foodmart_customer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\divsnPixel\\asia_to_me_customer_resturent\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\divsnPixel\\foodmart_customer\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

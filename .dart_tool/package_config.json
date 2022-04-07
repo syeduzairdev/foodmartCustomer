@@ -146,6 +146,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "im_stepper",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/im_stepper-0.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "intl_phone_field",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/intl_phone_field-3.0.1",
       "packageUri": "lib/",
@@ -344,7 +350,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-03-15T13:41:45.674975Z",
+  "generated": "2022-03-31T17:09:32.556984Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }

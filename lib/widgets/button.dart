@@ -32,11 +32,11 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: 220,
+      height: 55,
+      width: double.infinity,
       child: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        color: Colors.red,
+        color: Color(0xffF37720),
         child: Text(
           name,
           style: TextStyle(
@@ -89,7 +89,7 @@ class button {
       width: double.infinity,
       height: 55,
       decoration: BoxDecoration(
-          color: Color(0xffBC1C23), borderRadius: BorderRadius.circular(15)),
+          color: Color(0xffF37720), borderRadius: BorderRadius.circular(15)),
       child: Center(
         child: Text(
           txt,

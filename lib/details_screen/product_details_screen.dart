@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled3/details_screen/moreinfo_screen.dart';
 import 'package:untitled3/details_screen/product_card.dart';
-import 'package:untitled3/details_screen/rating_screen.dart';
-import 'package:untitled3/new_screens/place_order.dart';
+import 'package:untitled3/signin_register_screens/moreinfo.dart';
 import 'package:untitled3/widgets/app_theme.dart';
 
 class product_details_screen extends StatelessWidget {
@@ -14,19 +12,10 @@ class product_details_screen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (BuildContext context) => place_order()),
-              );
-            },
-            child: Container(
-              child: Image.asset(
-                'assets/product_cover.png',
-                height: 200,
-              ),
+          Container(
+            child: Image.asset(
+              'assets/product_cover.png',
+              height: 200,
             ),
           ),
           Container(
@@ -98,7 +87,7 @@ class product_details_screen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    GestureDetector(
+                    InkWell(
                       onTap: () {
                         Navigator.push(
                           context,

@@ -1,0 +1,80 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --start-paused -d 4ef7ec78 --dart-define=flutter.inspector.structuredErrors=true --devtools-server-address http://127.0.0.1:9100/ --target lib\main.dart
+
+## exception
+
+_InternalError: InternalError: 'Failed to create ZLibDeflateFilter'
+
+```
+#0      _ZLibDeflateFilter._init (dart:io-patch/filter_patch.dart:30:53)
+#1      new _ZLibDeflateFilter (dart:io-patch/filter_patch.dart:26:5)
+#2      RawZLibFilter._makeZLibDeflateFilter (dart:io-patch/filter_patch.dart:44:11)
+#3      new _ZLibEncoderSink._ (dart:io/data_transformer.dart:501:27)
+#4      ZLibEncoder.startChunkedConversion (dart:io/data_transformer.dart:357:16)
+#5      new _ConverterStreamEventSink (dart:convert/chunked_conversion.dart:69:34)
+#6      Converter.bind.<anonymous closure> (dart:convert/converter.dart:46:37)
+#7      new _SinkTransformerStreamSubscription (dart:async/stream_transformers.dart:47:30)
+#8      _BoundSinkStream.listen (dart:async/stream_transformers.dart:171:9)
+#9      _HttpOutgoing.addStream (dart:_http/http_impl.dart:1785:22)
+#10     _StreamSinkImpl.addStream.targetAddStream (dart:_http/http_impl.dart:925:22)
+#11     _StreamSinkImpl.addStream (dart:_http/http_impl.dart:931:36)
+#12     _HttpOutboundMessage.addStream (dart:_http/http_impl.dart:1145:20)
+#13     _DevFSHttpWriter._startWrite (package:flutter_tools/src/devfs.dart:357:23)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.10.2, on Microsoft Windows [Version 10.0.19044.1586], locale en-US)
+    • Flutter version 2.10.2 at C:\src\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 097d3313d8 (5 weeks ago), 2022-02-18 19:33:08 -0600
+    • Engine revision a83ed0e5e3
+    • Dart version 2.16.1
+    • DevTools version 2.9.2
+
+[!] Android toolchain - develop for Android devices (Android SDK version 32.1.0-rc1)
+    • Android SDK at C:\Users\uzair\AppData\Local\Android\sdk
+    • Platform android-32, build-tools 32.1.0-rc1
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    ✗ Could not determine java version
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop for Windows
+    ✗ Visual Studio not installed; this is necessary for Windows development.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[!] Android Studio (version 2021.1)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    ✗ Unable to determine bundled Java version.
+    • Try updating or re-installing Android Studio.
+
+[✓] VS Code (version 1.65.2)
+    • VS Code at C:\Users\uzair\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.36.0
+
+[✓] Connected device (4 available)
+    • SM J727P (mobile) • 4ef7ec78 • android-arm64  • Android 8.1.0 (API 27)
+    • Windows (desktop) • windows  • windows-x64    • Microsoft Windows [Version 10.0.19044.1586]
+    • Chrome (web)      • chrome   • web-javascript • Google Chrome 99.0.4844.82
+    • Edge (web)        • edge     • web-javascript • Microsoft Edge 99.0.1150.55
+
+[!] HTTP Host Availability
+    ✗ HTTP host https://maven.google.com/ is not reachable. Reason: An error occurred while checking the HTTP host: Failed host lookup: 'maven.google.com'
+    ✗ HTTP host https://pub.dev/ is not reachable. Reason: An error occurred while checking the HTTP host: Failed host lookup: 'pub.dev'
+    ✗ HTTP host https://cloud.google.com/ is not reachable. Reason: An error occurred while checking the HTTP host: Failed host lookup: 'cloud.google.com'
+
+! Doctor found issues in 4 categories.
+```

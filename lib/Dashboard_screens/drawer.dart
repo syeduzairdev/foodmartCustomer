@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:untitled3/Dashboard_screens/order_details.dart';
-import 'package:untitled3/drawer_screens/faq_screen.dart';
+import 'package:untitled3/drawer_screens/help_center.dart';
+import 'package:untitled3/mart/notification.dart';
+import 'package:untitled3/new_screens/coins.dart';
+import 'package:untitled3/orderlisting_today/orderlisting_today.dart';
 import 'package:untitled3/screen3.dart';
 import 'package:untitled3/screen4.dart';
-import 'package:untitled3/screen9.dart';
+import 'package:untitled3/signin_register_screens/sign_in.dart';
 import 'package:untitled3/widgets/widgets.dart';
 
 class drawer extends StatelessWidget {
@@ -16,11 +18,11 @@ class drawer extends StatelessWidget {
         child: Container(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 height: 70,
-                color: Color(0xffBC1C23),
+                color: Color(0xffFA701B),
                 child: Row(
                   children: [
                     Container(
@@ -30,7 +32,8 @@ class drawer extends StatelessWidget {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: Image.asset('assets/vector1.png')),
+                        child: Image.asset('assets/vector1.png',
+                            color: Color(0xffFA701B))),
                     SizedBox(
                       width: 10,
                     ),
@@ -43,10 +46,13 @@ class drawer extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height: 10),
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: 50,
+                height: 80,
                 decoration: new BoxDecoration(
+                  border: Border.fromBorderSide(
+                      BorderSide(color: Color(0xffC9C9C9))),
                   color: Colors.white,
                 ),
                 child: InkWell(
@@ -75,11 +81,15 @@ class drawer extends StatelessWidget {
                       ),
                     )),
               ),
+              SizedBox(
+                height: 20,
+              ),
               GestureDetector(
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => order_details()),
+                      MaterialPageRoute(
+                          builder: (context) => orderlisting_today()),
                     );
                   },
                   child: coupon().drawerwidget(
@@ -88,22 +98,24 @@ class drawer extends StatelessWidget {
                       context,
                       null)),
               coupon().drawerwidget(
-                Icons.chrome_reader_mode,
-                'Coupon Box ',
-                context,
-                () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => screen9()),
-                  );
-                },
+                  Icons.chrome_reader_mode, 'Coupon Box ', context, () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => coins()),
+                );
+              }),
+              SizedBox(
+                height: 20,
               ),
               coupon().drawerwidget(Icons.account_balance_wallet_rounded,
                   'My Wallet', context, null),
               coupon().drawerwidget(
-                  Icons.restaurant_menu, 'My Taste', context, null),
-              coupon().drawerwidget(
-                  Icons.notifications, 'Notifications ', context, null),
+                  Icons.notifications, 'Notifications ', context, () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => notification()),
+                );
+              }),
               coupon()
                   .drawerwidget(Icons.person, 'My Account  ', context, null),
               Container(
@@ -116,7 +128,7 @@ class drawer extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => faq_screen()),
+                        MaterialPageRoute(builder: (context) => help_screen()),
                       );
                     },
                     child: Padding(
@@ -143,7 +155,12 @@ class drawer extends StatelessWidget {
                       ),
                     )),
               ),
-              coupon().drawerwidget(Icons.logout, 'logout', context, null),
+              coupon().drawerwidget(Icons.logout, 'logout', context, () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => login_screen()),
+                );
+              }),
             ],
           ),
         ),

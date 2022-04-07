@@ -4,9 +4,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled3/signin_register_screens/forget_password.dart';
 import 'package:untitled3/widgets/button.dart';
 
-
-
-
 class create_acount_screen extends StatefulWidget {
   const create_acount_screen({Key? key}) : super(key: key);
 
@@ -36,9 +33,9 @@ class _create_acount_screenState extends State<create_acount_screen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.only(left: 10, right: 10),
+            padding: EdgeInsets.only(left: 15, right: 15),
             child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
@@ -58,28 +55,28 @@ class _create_acount_screenState extends State<create_acount_screen> {
                   ),
                   RichText(
                       text: TextSpan(children: <TextSpan>[
-                        TextSpan(
-                          text: "for sign up ",
-                          style: TextStyle(
-                              color: Color.fromRGBO(134, 134, 134, 1),
-                              fontSize: 16),
-                        ),
-                        TextSpan(
-                          text: "Already have account? ",
-                          style: TextStyle(
-                            color: Color(0xffC61820),
-                            fontSize: 16,
-                          ),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => login_screen()),
-                              // );
-                            },
-                        ),
-                      ])),
+                    TextSpan(
+                      text: "for sign up ",
+                      style: TextStyle(
+                          color: Color.fromRGBO(134, 134, 134, 1),
+                          fontSize: 16),
+                    ),
+                    TextSpan(
+                      text: "Already have account? ",
+                      style: TextStyle(
+                        color: Color(0xffF37720),
+                        fontSize: 16,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //       builder: (context) => login_screen()),
+                          // );
+                        },
+                    ),
+                  ])),
                   SizedBox(
                     height: 30,
                   ),
@@ -96,7 +93,6 @@ class _create_acount_screenState extends State<create_acount_screen> {
                       keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
                           suffixStyle: TextStyle(color: Colors.grey),
-
                           prefixStyle: TextStyle(color: Colors.grey),
                           hintText: 'Full Name',
                           enabledBorder: OutlineInputBorder(
@@ -133,7 +129,6 @@ class _create_acount_screenState extends State<create_acount_screen> {
                       keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
                           suffixStyle: TextStyle(color: Colors.grey),
-
                           prefixStyle: TextStyle(color: Colors.grey),
                           hintText: 'Email Address',
                           enabledBorder: OutlineInputBorder(
@@ -192,10 +187,50 @@ class _create_acount_screenState extends State<create_acount_screen> {
                               )),
                           errorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide( color: Color(0xffC61820),)),
+                              borderSide: BorderSide(
+                                color: Color(0xffC61820),
+                              )),
                           focusedErrorBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color(0xffC61820),))),
+                              borderSide: BorderSide(
+                                color: Color(0xffC61820),
+                              ))),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(251, 251, 251, 1),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(10),
+                      ),
+                    ),
+                    width: 334,
+                    height: 54,
+                    child: TextField(
+                      keyboardType: TextInputType.phone,
+                      decoration: InputDecoration(
+                          suffixStyle: TextStyle(color: Colors.grey),
+                          prefixStyle: TextStyle(color: Colors.grey),
+                          hintText: 'Refer a Freind, Get \$10',
+                          enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              borderSide: BorderSide(
+                                color: Colors.black.withAlpha(15),
+                              )),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              borderSide: BorderSide(
+                                color: Colors.black.withAlpha(15),
+                              )),
+                          errorBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              borderSide: BorderSide(color: Colors.red)),
+                          focusedErrorBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                              borderSide: BorderSide(color: Colors.red))),
                     ),
                   ),
                   SizedBox(
@@ -204,12 +239,11 @@ class _create_acount_screenState extends State<create_acount_screen> {
                   CustomButton(
                     name: 'Sign up',
                     route: () {
-                      Navigator.push (
+                      Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) =>
                                 forgot_password_screen()),
-
                       );
                     },
                   ),
@@ -218,28 +252,28 @@ class _create_acount_screenState extends State<create_acount_screen> {
                   ),
                   Center(
                       child: Text(
-                        'By Signing up you agree to our Terms ',
-                        style: TextStyle(
-                            color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
-                      )),
+                    'By Signing up you agree to our Terms ',
+                    style: TextStyle(
+                        color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+                  )),
                   SizedBox(
                     height: 5,
                   ),
                   Center(
                       child: Text(
-                        'Conditions & Privacy Policy.',
-                        style: TextStyle(
-                            color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
-                      )),
+                    'Conditions & Privacy Policy.',
+                    style: TextStyle(
+                        color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+                  )),
                   SizedBox(
                     height: 10,
                   ),
                   Center(
                       child: Text(
-                        ' or',
-                        style: TextStyle(
-                            color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
-                      )),
+                    ' or',
+                    style: TextStyle(
+                        color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+                  )),
                   SizedBox(
                     height: 25,
                   ),
@@ -289,8 +323,6 @@ class _create_acount_screenState extends State<create_acount_screen> {
                             ),
                           ),
                           leading: Icon(
-
-
                             FontAwesomeIcons.google,
                             color: Colors.white,
                           ),

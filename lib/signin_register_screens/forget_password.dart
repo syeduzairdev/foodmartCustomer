@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:untitled3/signin_register_screens/email_sent.dart';
 import 'package:untitled3/widgets/button.dart';
@@ -20,7 +19,7 @@ class forgot_password_screen extends StatelessWidget {
           elevation: 0.0,
         ),
         body: Container(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.only(left: 15, right: 15, top: 10),
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -32,17 +31,22 @@ class forgot_password_screen extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                Text('Enter your email address and we will ', style: TextStyle(color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),),
+                Text(
+                  'Enter your email address and we will ',
+                  style: TextStyle(
+                      color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+                ),
                 SizedBox(
                   height: 5,
                 ),
                 RichText(
                     text: TextSpan(children: <TextSpan>[
-                      TextSpan(
-                        text: "send you a reset instructions.",
-                        style: TextStyle(color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
-                      ),
-                    ])),
+                  TextSpan(
+                    text: "send you a reset instructions.",
+                    style: TextStyle(
+                        color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+                  ),
+                ])),
                 SizedBox(
                   height: 30,
                 ),
@@ -59,7 +63,6 @@ class forgot_password_screen extends StatelessWidget {
                     keyboardType: TextInputType.phone,
                     decoration: InputDecoration(
                         suffixStyle: TextStyle(color: Colors.grey),
-
                         prefixStyle: TextStyle(color: Colors.grey),
                         hintText: 'Email Address',
                         enabledBorder: OutlineInputBorder(
@@ -86,12 +89,11 @@ class forgot_password_screen extends StatelessWidget {
                 CustomButton(
                   name: 'Reset password',
                   route: () {
-                    Navigator.push (
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (BuildContext context) =>
                               reset_email_screen()),
-
                     );
                   },
                 ),

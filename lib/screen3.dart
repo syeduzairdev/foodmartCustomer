@@ -2,17 +2,20 @@ import 'dart:ui';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled3/Dashboard_screens/drawer.dart';
-import 'package:untitled3/categories/categories.dart';
 import 'package:untitled3/details_screen/product_details_screen.dart';
+import 'package:untitled3/mart/invites.dart';
+import 'package:untitled3/mart/search.dart';
+import 'package:untitled3/new_screens/catogaries.dart';
+import 'package:untitled3/new_screens/coins.dart';
 import 'package:untitled3/screen4.dart';
 import 'package:untitled3/widgets/widgets.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 final List<String> imgList = [
-  'assets/bg.png',
-  'assets/Rectangle.png',
-  'assets/bg.png',
-  'assets/bg.png',
+  'assets/sse.png',
+  'assets/sse.png',
+  'assets/sse.png',
+  'assets/sse.png',
 ];
 
 class screen3 extends StatefulWidget {
@@ -97,7 +100,7 @@ class _screen3State extends State<screen3> {
           children: [
             Icon(
               Icons.room,
-              color: Color(0xFFC61820),
+              color: Color(0xffF37720),
             ),
             Text(
               '17230 NE Sacramento Street',
@@ -130,34 +133,56 @@ class _screen3State extends State<screen3> {
               padding: const EdgeInsets.only(
                   left: 18.0, right: 18.0, bottom: 20.0, top: 15.0),
               child: Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xFFF3F3F3),
+                    borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                  ),
                   height: 40,
-                  child: TextField(
-                    decoration: new InputDecoration(
-                      hintText: 'Search food nearby',
-                      prefixIcon: Padding(
-                        padding: const EdgeInsets.only(left: 50.0, right: 20.0),
-                        child: Icon(
-                          Icons.search,
-                          color: Color(0xFF4F4F4F),
+                  child: Row(
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => search()),
+                          );
+                        },
+                        child: Padding(
+                          padding:
+                              const EdgeInsets.only(left: 50.0, right: 20.0),
+                          child: Icon(
+                            Icons.search,
+                            color: Color(0xFF4F4F4F),
+                          ),
                         ),
                       ),
-                      hintStyle: TextStyle(
-                          color: Colors.black38,
-                          fontSize: 16.0,
-                          fontFamily: 'Roboto'),
-                      filled: true,
-                      fillColor: Color(0xFFF3F3F3),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                        borderSide:
-                            BorderSide(color: Color(0xFFF3F3F3), width: 0),
+                      Expanded(
+                        child: TextField(
+                          decoration: new InputDecoration(
+                            hintText: 'Search food nearby',
+                            hintStyle: TextStyle(
+                                color: Colors.black38,
+                                fontSize: 16.0,
+                                fontFamily: 'Roboto'),
+                            filled: true,
+                            fillColor: Color(0xFFF3F3F3),
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(50.0)),
+                              borderSide: BorderSide(
+                                  color: Color(0xFFF3F3F3), width: 0),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(50.0)),
+                              borderSide: BorderSide(
+                                  color: Color(0xFFF3F3F3), width: 0),
+                            ),
+                          ),
+                        ),
                       ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                        borderSide:
-                            BorderSide(color: Color(0xFFF3F3F3), width: 0),
-                      ),
-                    ),
+                    ],
                   )),
             ),
             Container(
@@ -192,7 +217,7 @@ class _screen3State extends State<screen3> {
                               color: (Theme.of(context).brightness ==
                                           Brightness.dark
                                       ? Colors.white
-                                      : Color(0xFFBC1C23))
+                                      : Color(0xffF37720))
                                   .withOpacity(
                                       _current == entry.key ? 0.8 : 0.1)),
                         ),
@@ -217,7 +242,7 @@ class _screen3State extends State<screen3> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (BuildContext context) => search_screen()),
+                      builder: (BuildContext context) => categories()),
                 );
               },
               child: Padding(
@@ -303,7 +328,10 @@ class _screen3State extends State<screen3> {
                       padding: const EdgeInsets.only(right: 12.0),
                       child: Text(
                         'See all',
-                        style: TextStyle(fontSize: 16.0, color: Colors.red),
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Color(0xffF37720),
+                        ),
                       ),
                     )
                   ],
@@ -322,8 +350,7 @@ class _screen3State extends State<screen3> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    product_details_screen()),
+                                builder: (BuildContext context) => screen4()),
                           );
                         },
                         child: grid().grid1(context));

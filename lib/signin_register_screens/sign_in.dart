@@ -4,8 +4,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled3/signin_register_screens/sign_up.dart';
 import 'package:untitled3/widgets/button.dart';
 
-
-
 class login_screen extends StatefulWidget {
   const login_screen({Key? key}) : super(key: key);
 
@@ -36,13 +34,13 @@ class _login_screenState extends State<login_screen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
             child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    'Welcome to Asiato',
+                    'Welcome to Food Mart',
                     style: TextStyle(color: Colors.black, fontSize: 30),
                   ),
                   SizedBox(
@@ -58,28 +56,28 @@ class _login_screenState extends State<login_screen> {
                   ),
                   RichText(
                       text: TextSpan(children: <TextSpan>[
-                        TextSpan(
-                          text: " For sign in, Or ",
-                          style: TextStyle(
-                              color: Color.fromRGBO(134, 134, 134, 1),
-                              fontSize: 16),
-                        ),
-                        TextSpan(
-                          text: " Create new account. ",
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Color(0xffC61820),
-                          ),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => create_acount_screen()),
-                              // );
-                            },
-                        ),
-                      ])),
+                    TextSpan(
+                      text: " For sign in, Or ",
+                      style: TextStyle(
+                          color: Color.fromRGBO(134, 134, 134, 1),
+                          fontSize: 16),
+                    ),
+                    TextSpan(
+                      text: " Create new account. ",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Color(0xffF37720),
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //       builder: (context) => create_acount_screen()),
+                          // );
+                        },
+                    ),
+                  ])),
                   SizedBox(
                     height: 30,
                   ),
@@ -113,10 +111,14 @@ class _login_screenState extends State<login_screen> {
                                 )),
                             errorBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
-                                borderSide: BorderSide(color: Color(0xffC61820),)),
+                                borderSide: BorderSide(
+                                  color: Color(0xffC61820),
+                                )),
                             focusedErrorBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
-                                borderSide: BorderSide(color: Color(0xffC61820),))),
+                                borderSide: BorderSide(
+                                  color: Color(0xffC61820),
+                                ))),
                       ),
                     ),
                   ),
@@ -190,12 +192,11 @@ class _login_screenState extends State<login_screen> {
                   CustomButton(
                     name: 'Log in',
                     route: () {
-                      Navigator.push (
+                      Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) =>
                                 create_acount_screen()),
-
                       );
                     },
                   ),
@@ -204,10 +205,10 @@ class _login_screenState extends State<login_screen> {
                   ),
                   Center(
                       child: Text(
-                        ' or',
-                        style: TextStyle(
-                            color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
-                      )),
+                    ' or',
+                    style: TextStyle(
+                        color: Color.fromRGBO(134, 134, 134, 1), fontSize: 16),
+                  )),
                   SizedBox(
                     height: 25,
                   ),
@@ -259,13 +260,13 @@ class _login_screenState extends State<login_screen> {
                           ),
                           leading: Icon(
                             FontAwesomeIcons.google,
-                            color: Colors.white,size: 20.0,
+                            color: Colors.white,
+                            size: 20.0,
                           ),
                         ),
                       ),
                     ),
                   ),
-
                 ]),
           ),
         ));

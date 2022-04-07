@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:untitled3/drawer_screens/help_center.dart';
+import 'package:untitled3/mart/invites.dart';
+import 'package:untitled3/mart/notification.dart';
 import 'package:untitled3/new_screens/wallet_topup.dart';
 import 'package:untitled3/widgets/widgets.dart';
 
@@ -18,11 +21,20 @@ class _coinsState extends State<coins> {
         elevation: 0,
         backgroundColor: Colors.white,
         actions: [
-          Container(
-            height: 30,
-            width: 30,
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage("assets/noti.png")),
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => notification()),
+              );
+            },
+            child: Container(
+              height: 30,
+              width: 30,
+              decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage("assets/noti.png")),
+              ),
             ),
           ),
         ],
@@ -61,15 +73,16 @@ class _coinsState extends State<coins> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => wallet_topup()),
+                        builder: (BuildContext context) => invitess()),
                   );
                 },
                 child: Container(
                   height: 50,
                   width: 150,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Color(0xffBC1C23)),
+                    borderRadius: BorderRadius.circular(30),
+                    color: Color(0xffF37720),
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Row(
@@ -80,8 +93,10 @@ class _coinsState extends State<coins> {
                           width: 25,
                           decoration: BoxDecoration(
                               color: Colors.white, shape: BoxShape.circle),
-                          child: Icon(Icons.star_outlined,
-                              color: Color(0xffBC1C23)),
+                          child: Icon(
+                            Icons.star_outlined,
+                            color: Color(0xffF37720),
+                          ),
                         ),
                         Text(
                           "Deposit",
@@ -105,7 +120,10 @@ class _coinsState extends State<coins> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Coins().Coin(context, Color(0xffBC1C23)),
+                  Coins().Coin(
+                    context,
+                    Color(0xffF37720),
+                  ),
                   Coins().Coin(context, Color(0xffF6F6F6)),
                 ],
               ),

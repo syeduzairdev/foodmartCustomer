@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled3/new_screens/check_out.dart';
 import 'package:untitled3/new_screens/payment_method_II.dart';
 import 'package:untitled3/widgets/widgets.dart';
 
@@ -20,7 +21,7 @@ class _wallet_topupState extends State<wallet_topup> {
         backgroundColor: Colors.white,
         leading: Icon(Icons.arrow_back_ios, color: Colors.black),
         title: Text(
-          "Wallet Top up",
+          "Payment Methods",
           style: TextStyle(
               color: Colors.black, fontSize: 20, fontWeight: FontWeight.w600),
         ),
@@ -74,24 +75,18 @@ class _wallet_topupState extends State<wallet_topup> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                payment_method_II()));
+                            builder: (BuildContext context) => check_out()));
                   },
-                  child: card()
-                      .Card("Paypal", 'assets/paypal.png', "Default Payment")),
+                  child:
+                      card().Card("Esewa", 'assets/ee.png', "Default Payment")),
               SizedBox(
                 height: 15,
               ),
-              card()
-                  .Card("Master Card", 'assets/mastercard.png', "Not Default"),
+              card().Card("Fonepay", 'assets/Rectangle.png', "Not Default"),
               SizedBox(
                 height: 15,
               ),
-              card().Card("Visa", 'assets/visa.png', "Not Default"),
-              SizedBox(
-                height: 15,
-              ),
-              card().Card("COD", 'assets/cash_on_delivery.png', "Not Default"),
+              card().Card("COD", 'assets/cod.png', "Not Default"),
             ],
           ),
         ),

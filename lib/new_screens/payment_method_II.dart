@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:untitled3/new_screens/search.dart';
 import 'package:untitled3/widgets/widgets.dart';
 
 class payment_method_II extends StatefulWidget {
@@ -70,12 +69,7 @@ class _payment_method_IIState extends State<payment_method_II> {
                 height: 18,
               ),
               InkWell(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) => search()));
-                  },
+                  onTap: () {},
                   child: card()
                       .Card("Paypal", 'assets/paypal.png', "Default Payment")),
               SizedBox(

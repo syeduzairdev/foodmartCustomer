@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled3/new_screens/payment_metod.dart';
+import 'package:untitled3/mart/zinger.dart';
+import 'package:untitled3/new_screens/faq.dart';
 import 'package:untitled3/widgets/button.dart';
 
 class check_out extends StatefulWidget {
@@ -39,7 +40,7 @@ class _check_outState extends State<check_out> {
                     children: [
                       Icon(
                         Icons.location_on,
-                        color: Color(0xffBC1C23),
+                        color: Color(0xffF37720),
                       ),
                       SizedBox(
                         width: 8,
@@ -55,7 +56,7 @@ class _check_outState extends State<check_out> {
                   ),
                   Icon(
                     Icons.edit,
-                    color: Color(0xffBC1C23),
+                    color: Color(0xffF37720),
                   )
                 ],
               ),
@@ -178,7 +179,7 @@ class _check_outState extends State<check_out> {
                           ),
                           Icon(
                             Icons.edit,
-                            color: Color(0xffBC1C23),
+                            color: Color(0xffF37720),
                           )
                         ],
                       ),
@@ -195,7 +196,7 @@ class _check_outState extends State<check_out> {
                                 width: 17,
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
-                                        image: AssetImage('assets/cash.png'),
+                                        image: AssetImage('assets/cod.png'),
                                         fit: BoxFit.fill)),
                               ),
                               SizedBox(
@@ -350,7 +351,7 @@ class _check_outState extends State<check_out> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (BuildContext context) => payment_metod(),
+                          builder: (BuildContext context) => zinger(),
                         ));
                   },
                   child: button().Button("ADD TO CART")),

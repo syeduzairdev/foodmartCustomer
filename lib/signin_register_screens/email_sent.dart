@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled3/payments_screen/empty_payments_screen.dart';
 import 'package:untitled3/signin_register_screens/otp_screen.dart';
 import 'package:untitled3/signin_register_screens/sign_in.dart';
 import 'package:untitled3/signin_register_screens/verify_phone_number.dart';
@@ -23,7 +22,7 @@ class reset_email_screen extends StatelessWidget {
           elevation: 0.0,
         ),
         body: Container(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.only(left: 15, right: 15, top: 10),
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -53,7 +52,7 @@ class reset_email_screen extends StatelessWidget {
                   TextSpan(
                     text: " Having problem? ",
                     style: TextStyle(
-                      color: Colors.red,
+                      color: Color(0xffF37720),
                       fontSize: 16,
                     ),
                     recognizer: TapGestureRecognizer()
@@ -76,7 +75,8 @@ class reset_email_screen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) => otp_screen()),
+                            builder: (BuildContext context) =>
+                                phone_number_screen()),
                       );
                     },
                   ),

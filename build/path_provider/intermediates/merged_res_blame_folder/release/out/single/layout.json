@@ -1,26 +1,26 @@
 [
     {
-        "merged": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
-        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\custom_dialog.xml"
-    },
-    {
-        "merged": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "merged": "D:\\divsnPixel\\foodmart_customer\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
+        "merged": "D:\\divsnPixel\\foodmart_customer\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "D:\\divsnPixel\\asia_to_me_customer_resturent\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "merged": "D:\\divsnPixel\\foodmart_customer\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\divsnPixel\\foodmart_customer\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
         "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\divsnPixel\\foodmart_customer\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "D:\\divsnPixel\\foodmart_customer\\build\\path_provider\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\uzair\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
     }
 ]
